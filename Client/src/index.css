@@ -44,7 +44,7 @@ button {
   font-weight: 500;
   font-family: inherit;
   /*background-color:blue; */
- 
+
   cursor: pointer;
   transition: border-color 0.25s;
 }
@@ -57,12 +57,25 @@ button:focus-visible {
 }
 
 @media (prefers-color-scheme: light) {
-   /*:root {
+  /*:root {
     color: #213547;
     background-color: #ffffff;
   } */
   a:hover {
     color: #747bff;
   }
- 
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.8s ease-in-out;
 }
